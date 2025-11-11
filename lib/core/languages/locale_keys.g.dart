@@ -10,5 +10,8 @@ abstract class  LocaleKeys {
   static const user_name = 'user_name';
   static const password = 'password';
   static const login = 'login';
+  static const home_title = 'home_title';
+  static const home_subtitle = 'home_subtitle';
+  static const prepare = 'prepare';
 
 }
