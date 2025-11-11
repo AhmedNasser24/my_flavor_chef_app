@@ -4,6 +4,8 @@ import 'package:chef_app/feature/splash/view/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../feature/home/presentation/views/home_view.dart';
+
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(
   debugLabel: 'root',
 );
@@ -33,6 +35,15 @@ class AppRoute {
           child: const LoginView(),
         ),
       ),
+      GoRoute(
+        path: RouteName.home,
+        pageBuilder: (context, state) => _buildPageWithSlideTransition(
+          context: context,
+          state: state,
+          child: const HomeView(),
+        ),
+      ),
+
     ],
   );
 }
