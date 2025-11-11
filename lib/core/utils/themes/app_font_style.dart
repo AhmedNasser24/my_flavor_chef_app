@@ -3,13 +3,34 @@ import 'package:flutter/material.dart';
 
 class AppFontStyle {
   static const bold40Secondary = TextStyle(
-    fontSize: 40 ,
+    fontSize: 40,
     color: AppColors.secondary,
     fontWeight: FontWeight.bold,
   );
   static const regular16Secondary = TextStyle(
-    fontSize: 16 ,
+    fontSize: 16,
     color: AppColors.secondary,
+    fontWeight: FontWeight.w400,
+  );
+  static const bold20White = TextStyle(
+    fontSize: 20,
+    color: AppColors.white,
+    fontWeight: FontWeight.bold,
+  );
+  static const regular16WhiteE7 = TextStyle(
+    fontSize: 16,
+    color: AppColors.whiteE7,
+    fontWeight: FontWeight.w400,
+    // height: 1
+  );
+  static const regular14WhiteFA = TextStyle(
+    fontSize: 14,
+    color: AppColors.whiteFA,
+    fontWeight: FontWeight.w400,
+  );
+  static const regular14White = TextStyle(
+    fontSize: 14,
+    color: AppColors.white,
     fontWeight: FontWeight.w400,
   );
 }

@@ -5,5 +5,10 @@
 abstract class  LocaleKeys {
   static const splash_title = 'splash_title';
   static const splash_subtitle = 'splash_subtitle';
+  static const login_title = 'login_title';
+  static const login_subtitle = 'login_subtitle';
+  static const user_name = 'user_name';
+  static const password = 'password';
+  static const login = 'login';
 
 }
