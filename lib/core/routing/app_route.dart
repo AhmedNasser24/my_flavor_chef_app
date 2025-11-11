@@ -1,5 +1,6 @@
 import 'package:chef_app/core/routing/route_name.dart';
 import 'package:chef_app/feature/auth/presentation/views/login_view.dart';
+import 'package:chef_app/feature/home/presentation/views/food_detail_view.dart';
 import 'package:chef_app/feature/splash/view/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -41,6 +42,14 @@ class AppRoute {
           context: context,
           state: state,
           child: const HomeView(),
+        ),
+      ),
+      GoRoute(
+        path: RouteName.foodDetail,
+        pageBuilder: (context, state) => _buildPageWithSlideTransition(
+          context: context,
+          state: state,
+          child: const FoodDetailView(),
         ),
       ),
 

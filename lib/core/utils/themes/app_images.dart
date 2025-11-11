@@ -12,6 +12,8 @@ class AppImages {
 
   static const String imagesFood = "assets/images/food.png";
 
+  static const String imagesFoodDetails = "assets/images/food_details.png";
+
   static const String imagesForwardIosArrow = "assets/images/forward_ios_arrow.png";
 
   static const String imagesInstagram = "assets/images/instagram.png";
