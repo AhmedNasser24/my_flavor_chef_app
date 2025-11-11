@@ -7,6 +7,11 @@ class AppFontStyle {
     color: AppColors.secondary,
     fontWeight: FontWeight.bold,
   );
+  static const bold16White = TextStyle(
+    fontSize: 16,
+    color: AppColors.white,
+    fontWeight: FontWeight.bold,
+  );
   static const regular16Secondary = TextStyle(
     fontSize: 16,
     color: AppColors.secondary,
