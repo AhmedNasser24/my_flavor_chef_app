@@ -44,6 +44,7 @@ class _LoginBodyState extends State<LoginBody> {
             const PasswordField(),
             Gap(40),
             const LoginButton(),
+            Gap(30),
           ],
         ),
       ),
