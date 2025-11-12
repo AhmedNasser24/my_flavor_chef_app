@@ -15,5 +15,6 @@
   "cancel_order" : "إلغاء الطلب",
   "order_information" : "معلومات الطلب",
   "preparation_steps" : "خطوات التحضير",
-  "step" : "الخطوة {}"
+  "step" : "الخطوة {}",
+  "timer" : "ابدأ العد التنازلي - {}"
 }

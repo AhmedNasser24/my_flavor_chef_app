@@ -5,6 +5,7 @@ import 'package:chef_app/feature/home/presentation/widgets/cancel_order_button.d
 import 'package:chef_app/feature/home/presentation/widgets/custom_order_information_expansion_tile.dart';
 import 'package:chef_app/feature/home/presentation/widgets/food_details_image.dart';
 import 'package:chef_app/feature/home/presentation/widgets/preparation_completed_button.dart';
+import 'package:chef_app/feature/home/presentation/widgets/preperation_steps_extension_tile.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -52,6 +53,11 @@ class FoodDetailView extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: CustomOrderInformationExpansionTile(),
               ),
+              Gap(10),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: PreperationStepsExpansionTile(),
+              ),
               Gap(20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -63,6 +69,7 @@ class FoodDetailView extends StatelessWidget {
                   ],
                 ),
               ),
+              Gap(30),
             ],
           ),
         ),

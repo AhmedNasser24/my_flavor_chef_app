@@ -20,5 +20,6 @@ abstract class  LocaleKeys {
   static const order_information = 'order_information';
   static const preparation_steps = 'preparation_steps';
   static const step = 'step';
+  static const timer = 'timer';
 
 }
