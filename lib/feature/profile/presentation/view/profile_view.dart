@@ -2,7 +2,7 @@ import 'package:chef_app/core/languages/locale_keys.g.dart';
 import 'package:chef_app/core/utils/themes/app_colors.dart';
 import 'package:chef_app/core/utils/themes/app_font_style.dart';
 import 'package:chef_app/core/utils/themes/app_images.dart';
-import 'package:chef_app/feature/profile/presentation/widgets/back_arrow_button.dart';
+import 'package:chef_app/core/widgets/back_arrow_button.dart';
 import 'package:chef_app/feature/profile/presentation/widgets/chef_avatar_and_name.dart';
 import 'package:chef_app/feature/profile/presentation/widgets/logout_tile.dart';
 import 'package:easy_localization/easy_localization.dart';

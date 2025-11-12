@@ -1,5 +1,6 @@
 import 'package:chef_app/core/utils/themes/app_images.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class BackArrowButton extends StatelessWidget {
   const BackArrowButton({super.key});
@@ -7,7 +8,9 @@ class BackArrowButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        context.pop();
+      },
       borderRadius: BorderRadius.circular(12),
       child: Padding(
         padding: const EdgeInsets.all(8.0),

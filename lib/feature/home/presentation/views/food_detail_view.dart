@@ -1,7 +1,9 @@
 import 'package:chef_app/core/languages/locale_keys.g.dart';
 import 'package:chef_app/core/utils/themes/app_colors.dart';
 import 'package:chef_app/core/utils/themes/app_font_style.dart';
+import 'package:chef_app/core/widgets/back_arrow_button.dart';
 import 'package:chef_app/feature/home/presentation/widgets/cancel_order_button.dart';
+import 'package:chef_app/feature/home/presentation/widgets/custom_linear_progress_indicator.dart';
 import 'package:chef_app/feature/home/presentation/widgets/custom_order_information_expansion_tile.dart';
 import 'package:chef_app/feature/home/presentation/widgets/food_details_image.dart';
 import 'package:chef_app/feature/home/presentation/widgets/preparation_completed_button.dart';
@@ -89,42 +91,8 @@ class FoodDetailView extends StatelessWidget {
     return AppBar(
       backgroundColor: AppColors.background,
       title: Text('البرجر', style: AppFontStyle.regular16WhiteE7),
-      foregroundColor: AppColors.primary,
+      leading: BackArrowButton(),
     );
   }
 }
 
-class CustomLinearProgressIndicator extends StatelessWidget {
-  const CustomLinearProgressIndicator({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Text("4 من أصل 5 خطوات مكتملة." , style : AppFontStyle.regular16WhiteFA),
-              Spacer(),
-              Text("50%" , style : AppFontStyle.regular16WhiteFA),
-            ],
-          ),
-          Gap(12),
-          Transform.rotate(
-            angle: 3.14,
-            child: LinearProgressIndicator(
-              value: 0.5,
-              backgroundColor: AppColors.white,
-              valueColor: AlwaysStoppedAnimation<Color>(AppColors.primary),
-              minHeight: 12,
-              borderRadius: BorderRadius.circular(16),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
