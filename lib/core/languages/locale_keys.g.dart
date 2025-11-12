@@ -28,5 +28,8 @@ abstract class  LocaleKeys {
   static const logout_title = 'logout_title';
   static const logout_subtitle = 'logout_subtitle';
   static const confirm_logout = 'confirm_logout';
+  static const connect_us_title = 'connect_us_title';
+  static const connect_us_subtitle = 'connect_us_subtitle';
+  static const whatsapp = 'whatsapp';
 
 }

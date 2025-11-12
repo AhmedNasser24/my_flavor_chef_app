@@ -1,4 +1,5 @@
 import 'package:chef_app/core/languages/locale_keys.g.dart';
+import 'package:chef_app/core/routing/route_name.dart';
 import 'package:chef_app/core/utils/themes/app_colors.dart';
 import 'package:chef_app/core/utils/themes/app_font_style.dart';
 import 'package:chef_app/core/utils/themes/app_images.dart';
@@ -8,6 +9,7 @@ import 'package:chef_app/feature/profile/presentation/widgets/logout_tile.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
@@ -27,15 +29,15 @@ class ProfileView extends StatelessWidget {
                     width: double.infinity,
                     color: AppColors.black11,
                   ),
-                  Gap(150),
+                  const Gap(150),
                   Container(
                     margin: const EdgeInsets.symmetric(horizontal: 16),
-                    padding: EdgeInsets.symmetric(vertical: 8),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
                     decoration: BoxDecoration(
                       color: AppColors.black11,
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Column(
+                    child: const Column(
                       children: [
                         PersonalInformationTile(),
                         ConnectWithUsTile(),
@@ -43,19 +45,19 @@ class ProfileView extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Gap(20),
-                  LogoutTile(),
-                  Gap(20),
+                  const Gap(20),
+                  const LogoutTile(),
+                  const Gap(20),
                 ],
               ),
             ),
             Positioned(
               top: 20,
-              right: context.locale == Locale('ar') ? 16 : null,
-              left: context.locale == Locale('ar') ? null : 16,
-              child: BackArrowButton(),
+              right: context.locale == const Locale('ar') ? 16 : null,
+              left: context.locale == const Locale('ar') ? null : 16,
+              child: const BackArrowButton(),
             ),
-            Positioned(
+            const Positioned(
               top: 200 - 70,
               left: 0,
               right: 0,
@@ -91,6 +93,7 @@ class ConnectWithUsTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: () {context.push(RouteName.connectUs);},
       title: Text(
         LocaleKeys.connect_with_us.tr(),
         style: AppFontStyle.regular14WhiteFA,

@@ -17,6 +17,7 @@ class CustomOrderInformationExpansionTile extends StatelessWidget {
       child: Theme(
         data: Theme.of(context).copyWith(
           dividerColor: Colors.transparent, // remove divider line
+          splashColor: Colors.transparent,
         ),
         child: ExpansionTile(
           title: Text(

@@ -22,6 +22,11 @@ class PreperationStepsExpansionTile extends StatelessWidget {
           splashColor: Colors.transparent,
         ),
         child: ExpansionTile(
+          expansionAnimationStyle: const AnimationStyle(
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.easeInOut,
+            reverseCurve: Curves.easeInOut,
+          ),
           title: Text(
             LocaleKeys.preparation_steps.tr(),
             style: AppFontStyle.semiBold16WhiteFA,
@@ -31,7 +36,7 @@ class PreperationStepsExpansionTile extends StatelessWidget {
 
           collapsedIconColor: AppColors.white,
           tilePadding: const EdgeInsets.all(8),
-          childrenPadding: EdgeInsets.symmetric(
+          childrenPadding: const EdgeInsets.symmetric(
             horizontal: 8,
           ), // remove default padding
           backgroundColor: Colors.transparent, // no extra bg overlay
@@ -73,10 +78,7 @@ class PreperationStepsExpansionTile extends StatelessWidget {
                       style: AppFontStyle.regular12Black2A,
                       // textAlign: TextAlign.right,
                     ),
-                    if (i % 2 == 0) ...{
-                      Gap(10),
-                      CountDownTimer(),
-                    },
+                    if (i % 2 == 0) ...{const Gap(10), const CountDownTimer()},
                   ],
                 ),
               ),
@@ -87,4 +89,3 @@ class PreperationStepsExpansionTile extends StatelessWidget {
     );
   }
 }
-

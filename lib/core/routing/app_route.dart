@@ -1,6 +1,7 @@
 import 'package:chef_app/core/routing/route_name.dart';
 import 'package:chef_app/feature/auth/presentation/views/login_view.dart';
 import 'package:chef_app/feature/home/presentation/views/food_detail_view.dart';
+import 'package:chef_app/feature/profile/presentation/view/connect_us_view.dart';
 import 'package:chef_app/feature/profile/presentation/view/profile_view.dart';
 import 'package:chef_app/feature/splash/view/splash_view.dart';
 import 'package:flutter/material.dart';
@@ -19,14 +20,14 @@ final GlobalKey<NavigatorState> _shellNavigatorKey = GlobalKey<NavigatorState>(
 class AppRoute {
   static GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: RouteName.profile,
+    initialLocation: RouteName.splash,
     routes: [
       GoRoute(
         path: RouteName.splash,
         pageBuilder: (context, state) => _buildPageWithSlideTransition(
           context: context,
           state: state,
-          child: SplashView(),
+          child: const SplashView(),
         ),
       ),
       GoRoute(
@@ -61,7 +62,14 @@ class AppRoute {
           child: const ProfileView(),
         ),
       ),
-
+      GoRoute(
+        path: RouteName.connectUs,
+        pageBuilder: (context, state) => _buildPageWithSlideTransition(
+          context: context,
+          state: state,
+          child: const ConnectUsView(),
+        ),
+      ),
     ],
   );
 }

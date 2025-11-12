@@ -47,5 +47,22 @@
 		<true/>
 		<key>UIStatusBarHidden</key>
 		<false/>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<!-- Instagram -->
+			<string>instagram</string>
+
+			<!-- Facebook -->
+			<string>fb</string>
+
+			<!-- WhatsApp -->
+			<string>whatsapp</string>
+
+			<!-- Snapchat -->
+			<string>snapchat</string>
+
+			<!-- TikTok -->
+			<string>snssdk1233</string>
+		</array>
 	</dict>
 </plist>
