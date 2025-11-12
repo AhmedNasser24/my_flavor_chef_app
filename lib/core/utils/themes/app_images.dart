@@ -40,6 +40,8 @@ class AppImages {
 
   static const String imagesSettingIcon = "assets/images/setting_icon.png";
 
+  static const String imagesShutDownIcon = "assets/images/shut_down_icon.png";
+
   static const String imagesSnapchat = "assets/images/snapchat.png";
 
   static const String imagesSplashLogo = "assets/images/splash_logo.png";

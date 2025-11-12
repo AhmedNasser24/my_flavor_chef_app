@@ -18,41 +18,36 @@ class ProfileView extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  height: 200,
-                  width: double.infinity,
-                  color: AppColors.black11,
-                ),
-                Gap(150),
-                Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 16),
-                  padding: EdgeInsets.symmetric(vertical: 8),
-                  decoration: BoxDecoration(
+            SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 200,
+                    width: double.infinity,
                     color: AppColors.black11,
-                    borderRadius: BorderRadius.circular(16),
                   ),
-                  child: Column(
-                    children: [
-                      PersonalInformationTile(),
-                      ConnectWithUsTile(),
-                      SettingTile(),
-                    ],
+                  Gap(150),
+                  Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 16),
+                    padding: EdgeInsets.symmetric(vertical: 8),
+                    decoration: BoxDecoration(
+                      color: AppColors.black11,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Column(
+                      children: [
+                        PersonalInformationTile(),
+                        ConnectWithUsTile(),
+                        SettingTile(),
+                      ],
+                    ),
                   ),
-                ),
-                Gap(20),
-                Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 16),
-                  padding: EdgeInsets.symmetric(vertical: 8),
-                  decoration: BoxDecoration(
-                    color: AppColors.black11,
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: LogoutTile(),
-                ),
-              ],
+                  Gap(20),
+                  LogoutTile(),
+                  Gap(20),
+                ],
+              ),
             ),
             Positioned(
               top: 20,

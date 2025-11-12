@@ -25,5 +25,8 @@ abstract class  LocaleKeys {
   static const connect_with_us = 'connect_with_us';
   static const settings = 'settings';
   static const logout = 'logout';
+  static const logout_title = 'logout_title';
+  static const logout_subtitle = 'logout_subtitle';
+  static const confirm_logout = 'confirm_logout';
 
 }
