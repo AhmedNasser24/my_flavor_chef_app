@@ -32,6 +32,11 @@ class AppFontStyle {
     color: AppColors.white,
     fontWeight: FontWeight.w600,
   );
+  static const semiBold16WhiteFA = TextStyle(
+    fontSize: 16,
+    color: AppColors.whiteFA,
+    fontWeight: FontWeight.w600,
+  );
   static const regular16WhiteE7 = TextStyle(
     fontSize: 16,
     color: AppColors.whiteE7,
@@ -51,6 +56,11 @@ class AppFontStyle {
   static const regular14grey = TextStyle(
     fontSize: 14,
     color: AppColors.grey,
+    fontWeight: FontWeight.w400,
+  );
+  static const regular12Black2A = TextStyle(
+    fontSize: 12,
+    color: AppColors.black2A,
     fontWeight: FontWeight.w400,
   );
 }

@@ -26,6 +26,7 @@ class CustomButton extends StatelessWidget {
       onTap: onTap,
       splashColor: Colors.transparent,
       hoverColor: Colors.transparent,
+      borderRadius: BorderRadius.circular(borderRadius != null ? borderRadius! : 16.0) ,
       child: Container(
         padding: const EdgeInsets.all(12.0),
         width: width,

@@ -17,5 +17,8 @@ abstract class  LocaleKeys {
   static const food_details_subtitle = 'food_details_subtitle';
   static const preparing_done = 'preparing_done';
   static const cancel_order = 'cancel_order';
+  static const order_information = 'order_information';
+  static const preparation_steps = 'preparation_steps';
+  static const step = 'step';
 
 }
