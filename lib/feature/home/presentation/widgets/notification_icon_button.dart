@@ -1,6 +1,8 @@
 
+import 'package:chef_app/core/routing/route_name.dart';
 import 'package:chef_app/core/utils/themes/app_images.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../core/utils/themes/app_colors.dart';
 
@@ -12,7 +14,9 @@ class NotificationIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        context.push(RouteName.notification);
+      },
       borderRadius: BorderRadius.circular(8.0),
       child: Container(
         padding: const EdgeInsets.all(8.0),

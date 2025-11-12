@@ -84,6 +84,11 @@ class AppFontStyle {
     color: AppColors.white,
     fontWeight: FontWeight.w400,
   );
+  static const regular11White = TextStyle(
+    fontSize: 11,
+    color: AppColors.white,
+    fontWeight: FontWeight.w400,
+  );
   static const regular14grey = TextStyle(
     fontSize: 14,
     color: AppColors.grey,
@@ -93,5 +98,10 @@ class AppFontStyle {
     fontSize: 12,
     color: AppColors.black2A,
     fontWeight: FontWeight.w400,
+  );
+  static const light14WhiteE7  = TextStyle(
+    fontSize: 14,
+    color: AppColors.whiteE7,
+    fontWeight: FontWeight.w300,
   );
 }

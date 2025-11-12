@@ -31,5 +31,6 @@ abstract class  LocaleKeys {
   static const connect_us_title = 'connect_us_title';
   static const connect_us_subtitle = 'connect_us_subtitle';
   static const whatsapp = 'whatsapp';
+  static const Notifications = 'Notifications';
 
 }

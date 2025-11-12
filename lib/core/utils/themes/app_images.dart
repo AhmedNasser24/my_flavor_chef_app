@@ -28,6 +28,8 @@ class AppImages {
 
   static const String imagesLogoutIcon = "assets/images/logout_icon.png";
 
+  static const String imagesNewOrderIcon = "assets/images/new_order_icon.png";
+
   static const String imagesNotificationIcon = "assets/images/notification_icon.png";
 
   static const String imagesPersonIcon = "assets/images/person_icon.png";

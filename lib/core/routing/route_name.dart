@@ -5,4 +5,5 @@ class RouteName {
   static const String foodDetail = '/foodDetail';
   static const String profile = '/profile';
   static const String connectUs = '/connectUs';
+  static const String notification = '/notification';
 }

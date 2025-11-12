@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../feature/home/presentation/views/home_view.dart';
+import '../../feature/notification/presentation/views/notification_view.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(
   debugLabel: 'root',
@@ -20,7 +21,7 @@ final GlobalKey<NavigatorState> _shellNavigatorKey = GlobalKey<NavigatorState>(
 class AppRoute {
   static GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: RouteName.splash,
+    initialLocation: RouteName.notification,
     routes: [
       GoRoute(
         path: RouteName.splash,
@@ -68,6 +69,14 @@ class AppRoute {
           context: context,
           state: state,
           child: const ConnectUsView(),
+        ),
+      ),
+      GoRoute(
+        path: RouteName.notification,
+        pageBuilder: (context, state) => _buildPageWithSlideTransition(
+          context: context,
+          state: state,
+          child: const NotificationView(),
         ),
       ),
     ],
