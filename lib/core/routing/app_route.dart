@@ -21,7 +21,7 @@ final GlobalKey<NavigatorState> _shellNavigatorKey = GlobalKey<NavigatorState>(
 class AppRoute {
   static GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: RouteName.notification,
+    initialLocation: RouteName.splash,
     routes: [
       GoRoute(
         path: RouteName.splash,

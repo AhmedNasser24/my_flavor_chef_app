@@ -23,23 +23,23 @@ class FoodDetailView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              FoodDetailsImage(),
-              Gap(10),
+              const FoodDetailsImage(),
+              const Gap(10),
               Align(
-                alignment: context.locale == Locale('ar')
+                alignment: context.locale == const Locale('ar')
                     ? Alignment.centerRight
                     : Alignment.centerLeft,
                 child: Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Text(
                     LocaleKeys.food_details_title.tr(),
                     style: AppFontStyle.bold20White,
                   ),
                 ),
               ),
-              Gap(10),
+              const Gap(10),
               Align(
-                alignment: context.locale == Locale('ar')
+                alignment: context.locale == const Locale('ar')
                     ? Alignment.centerRight
                     : Alignment.centerLeft,
                 child: Padding(
@@ -50,27 +50,27 @@ class FoodDetailView extends StatelessWidget {
                   ),
                 ),
               ),
-              Gap(10),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              const Gap(20),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16.0),
                 child: CustomOrderInformationExpansionTile(),
               ),
-              Gap(10),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              const Gap(10),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16.0),
                 child: PreperationStepsExpansionTile(),
               ),
-              Gap(20),
-              Gap(10),
-              Divider(
+              const Gap(20),
+              const Gap(10),
+              const Divider(
                 height: 20,
                 thickness: 0.5,
                 color: Color(0xFFDEDEDE),
               ),
-              CustomLinearProgressIndicator(),
-              Gap(20),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              const CustomLinearProgressIndicator(),
+              const Gap(20),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16.0),
                 child: Row(
                   children: [
                     Expanded(child: PreparationCompletedButton()),
@@ -79,7 +79,7 @@ class FoodDetailView extends StatelessWidget {
                   ],
                 ),
               ),
-              Gap(30),
+              const Gap(30),
             ],
           ),
         ),
@@ -90,8 +90,8 @@ class FoodDetailView extends StatelessWidget {
   AppBar appBar() {
     return AppBar(
       backgroundColor: AppColors.background,
-      title: Text('البرجر', style: AppFontStyle.regular16WhiteE7),
-      leading: BackArrowButton(),
+      title: const Text('البرجر', style: AppFontStyle.regular16WhiteE7),
+      leading: const BackArrowButton(),
     );
   }
 }
