@@ -48,6 +48,12 @@ class AppFontStyle {
     fontWeight: FontWeight.w400,
     // height: 1
   );
+  static const regular16WhiteFA = TextStyle(
+    fontSize: 16,
+    color: AppColors.whiteFA,
+    fontWeight: FontWeight.w400,
+    // height: 1
+  );
   static const regular14WhiteFA = TextStyle(
     fontSize: 14,
     color: AppColors.whiteFA,

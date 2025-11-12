@@ -59,6 +59,14 @@ class FoodDetailView extends StatelessWidget {
                 child: PreperationStepsExpansionTile(),
               ),
               Gap(20),
+              Gap(10),
+              Divider(
+                height: 20,
+                thickness: 0.5,
+                color: Color(0xFFDEDEDE),
+              ),
+              CustomLinearProgressIndicator(),
+              Gap(20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Row(
@@ -82,6 +90,41 @@ class FoodDetailView extends StatelessWidget {
       backgroundColor: AppColors.background,
       title: Text('البرجر', style: AppFontStyle.regular16WhiteE7),
       foregroundColor: AppColors.primary,
+    );
+  }
+}
+
+class CustomLinearProgressIndicator extends StatelessWidget {
+  const CustomLinearProgressIndicator({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Text("4 من أصل 5 خطوات مكتملة." , style : AppFontStyle.regular16WhiteFA),
+              Spacer(),
+              Text("50%" , style : AppFontStyle.regular16WhiteFA),
+            ],
+          ),
+          Gap(12),
+          Transform.rotate(
+            angle: 3.14,
+            child: LinearProgressIndicator(
+              value: 0.5,
+              backgroundColor: AppColors.white,
+              valueColor: AlwaysStoppedAnimation<Color>(AppColors.primary),
+              minHeight: 12,
+              borderRadius: BorderRadius.circular(16),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
