@@ -2,6 +2,8 @@ import 'package:chef_app/core/languages/locale_keys.g.dart';
 import 'package:chef_app/core/utils/themes/app_colors.dart';
 import 'package:chef_app/core/utils/themes/app_font_style.dart';
 import 'package:chef_app/core/utils/themes/app_images.dart';
+import 'package:chef_app/feature/profile/presentation/widgets/back_arrow_button.dart';
+import 'package:chef_app/feature/profile/presentation/widgets/chef_avatar_and_name.dart';
 import 'package:chef_app/feature/profile/presentation/widgets/logout_tile.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +30,7 @@ class ProfileView extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.symmetric(horizontal: 16),
                   padding: EdgeInsets.symmetric(vertical: 8),
-                  decoration:  BoxDecoration(
+                  decoration: BoxDecoration(
                     color: AppColors.black11,
                     borderRadius: BorderRadius.circular(16),
                   ),
@@ -44,13 +46,25 @@ class ProfileView extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.symmetric(horizontal: 16),
                   padding: EdgeInsets.symmetric(vertical: 8),
-                  decoration:  BoxDecoration(
+                  decoration: BoxDecoration(
                     color: AppColors.black11,
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: LogoutTile()
+                  child: LogoutTile(),
                 ),
               ],
+            ),
+            Positioned(
+              top: 20,
+              right: context.locale == Locale('ar') ? 16 : null,
+              left: context.locale == Locale('ar') ? null : 16,
+              child: BackArrowButton(),
+            ),
+            Positioned(
+              top: 200 - 70,
+              left: 0,
+              right: 0,
+              child: ChefAvatarAndName(),
             ),
           ],
         ),
@@ -60,11 +74,8 @@ class ProfileView extends StatelessWidget {
 }
 
 
-
 class SettingTile extends StatelessWidget {
-  const SettingTile({
-    super.key,
-  });
+  const SettingTile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -80,9 +91,7 @@ class SettingTile extends StatelessWidget {
 }
 
 class ConnectWithUsTile extends StatelessWidget {
-  const ConnectWithUsTile({
-    super.key,
-  });
+  const ConnectWithUsTile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -98,9 +107,7 @@ class ConnectWithUsTile extends StatelessWidget {
 }
 
 class PersonalInformationTile extends StatelessWidget {
-  const PersonalInformationTile({
-    super.key,
-  });
+  const PersonalInformationTile({super.key});
 
   @override
   Widget build(BuildContext context) {

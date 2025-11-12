@@ -27,6 +27,11 @@ class AppFontStyle {
     color: AppColors.white,
     fontWeight: FontWeight.w500,
   );
+  static const medium12WhiteE7 = TextStyle(
+    fontSize: 12,
+    color: AppColors.whiteE7,
+    fontWeight: FontWeight.w500,
+  );
   static const bold20White = TextStyle(
     fontSize: 20,
     color: AppColors.white,

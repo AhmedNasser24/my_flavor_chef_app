@@ -6,6 +6,8 @@ class AppImages {
 
   static const String imagesBackArrow = "assets/images/back_arrow.png";
 
+  static const String imagesChefAvatar = "assets/images/chef_avatar.png";
+
   static const String imagesConnectWithUsIcon = "assets/images/connect_with_us_icon.png";
 
   static const String imagesFacebook = "assets/images/Facebook.png";
