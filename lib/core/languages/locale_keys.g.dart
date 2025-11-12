@@ -21,5 +21,9 @@ abstract class  LocaleKeys {
   static const preparation_steps = 'preparation_steps';
   static const step = 'step';
   static const timer = 'timer';
+  static const personal_info = 'personal_info';
+  static const connect_with_us = 'connect_with_us';
+  static const settings = 'settings';
+  static const logout = 'logout';
 
 }

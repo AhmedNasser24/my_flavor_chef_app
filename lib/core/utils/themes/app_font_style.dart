@@ -17,6 +17,11 @@ class AppFontStyle {
     color: AppColors.secondary,
     fontWeight: FontWeight.w400,
   );
+  static const regular16Primary = TextStyle(
+    fontSize: 16,
+    color: AppColors.primary,
+    fontWeight: FontWeight.w400,
+  );
   static const medium12White = TextStyle(
     fontSize: 12,
     color: AppColors.white,

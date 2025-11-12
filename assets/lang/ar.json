@@ -16,5 +16,9 @@
   "order_information" : "معلومات الطلب",
   "preparation_steps" : "خطوات التحضير",
   "step" : "الخطوة {}",
-  "timer" : "ابدأ العد التنازلي - {}"
+  "timer" : "ابدأ العد التنازلي - {}",
+  "personal_info" : "المعلومات الشخصية",
+  "connect_with_us" : "تواصل معنا",
+  "settings" : "الإعدادات",
+  "logout" : "تسجيل خروج"
 }
